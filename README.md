@@ -71,3 +71,21 @@ For the multiple linear regression model, the following hypothesis will help to 
 - To determine if this linear model predict mpg of MechaCar prototypes effectively we need to look at its **r-squared** and **p-value**.
 - According to our results in the image above, r-squared is 0.7149 and indicates a strong positive linear relationship, therefore, we can confirm that this linear model effectively predicts mpg of MechaCar prototypes.
 
+### Summary Statistics on Suspension Coils
+
+**The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
+
+**Suspension Coil(total_summary)**
+
+The current manufacturing data meet this design specification for all manufacturing lots in total. According to the results below, variance is 62.29 PSI and that is within requirements of not exceeding variance 100 PSI.
+
+![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/total_summary.png)
+
+
+**Suspension Coil(lot_summary)**
+
+The current manufacturing data partially meet this design specification for each lot separately. According to the results below, it shows that Lot 1 and Lot 2 meet the design specification with a variance of 0.9795918 and 7.4693878 PSI respectively, and it is within requirements of not exceeding variance 100 PSI. Lot 3 does not meet the design specification because of its variance of 170.286122 PSI which exceeds the requirements variance of 100 PSI.
+
+![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/lot_summary.png)
+
+
