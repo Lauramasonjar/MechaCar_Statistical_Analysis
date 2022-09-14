@@ -88,4 +88,60 @@ The current manufacturing data partially meet this design specification for each
 
 ![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/lot_summary.png)
 
+#
+
+### T-Tests on Suspension Coils
+
+We are performing **one-sample t-test**, that is used to determine whether there is a statistical difference between the means of a sample dataset (suspension coil data set) and a population dataset with a given mean of 1,500 PSI. With the t-test, we are establishing the following hypothesis:
+
+**H0:** There is no statistical difference between the suspension coil data set mean and its presumed population mean of 1,500 PSI.
+
+**Ha:** There is statistical difference between the suspension coil data set mean and its presumed population mean of 1,500 PSI.
+
+In order to **reject** or **fail to reject our null hypothesis** we have to look at the **p-value** that determines if there is a statistical difference between the observed sample mean and its presumed population mean.
+According to the results below, p-value for all manufacturing lots is 0.06028, for lot 1 = 1, for lot 2 = 0.6072, and for lot 3 = 0.04168. In both lot 1 and lot 2 cases p-value is above the assumed significance level of 0.05. Therefore, there is not enough evidence and **we fail to reject the null hypothesis**, meaning that the two means are not statistically different.
+
+![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/t_test%20_all_manufacturing_lots.png)
+
+![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/t_test_lot_1.png)
+
+![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/t_test_lot_2.png)
+
+![MechaCar_Statistical_Analysis](https://github.com/Lauramasonjar/MechaCar_Statistical_Analysis/blob/main/Images/t_test_lot_3.png)
+
+
+## Study Design: MechaCar vs Competition
+
+**What metrics would be of interest to a consumer (cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating .etc.)?**
+
+
+As per the environmental awareness, customers are more cautious about pollution and car emissions as well as fuel efficiencies around city and highways.
+In this case electric cars/hybrid cars are popular with consumers, but because of the high cost people can’t afford, or just don’t want, to invest in it.
+MechaCar can provide a good alternative. So, we would test the following metrices to compare MechaCar against the competition.
+
+**Competition: City and Highway fuel efficiencies.**
+
+
+**What is the null hypothesis or alternative hypothesis?**
+
+- Null Hypothesis: The cars in the same class have the same fuel efficiencies.
+
+- Alternative Hypothesis: The cars in the same class do not have the same fuel efficiencies.
+
+**What statistical test would you use to test the hypothesis? And why?**
+
+- To test the hypotheses, we would use the ANOVA test, aka the Analysis of Variance.
+- ANOVA is used to test the means of a single dependent variable across a single independent variable with multiple groups.
+- We would use an ANOVA test to complete this analysis for both types of fuel efficiencies.
+- We can use the ggplot2 library to show the potential spread between different cars using a boxplot.
+
+
+#### What data is needed to run the statistical test?
+
+To run this statistical test, we need the data from:
+- Model ID, Manufacturer, fuel efficiency data, class type data
+- It will need fuel efficiency data from 50 individual cars.
+- Then we can create a sample size of data for each car in the class type.
+- For example, if there were 10 cars in the class type, we can have a top of 500 data points collected for each fuel efficiency type.
+
 
